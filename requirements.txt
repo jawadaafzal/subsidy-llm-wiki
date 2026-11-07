@@ -1,0 +1,9 @@
+google-genai
+pydantic
+python-frontmatter
+pymupdf4llm
+rank-bm25
+streamlit
+pytest
+python-dotenv
+pyyaml
