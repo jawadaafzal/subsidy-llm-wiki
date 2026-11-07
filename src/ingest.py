@@ -5,7 +5,7 @@ from pathlib import Path
 from src.extract import extract_pdf
 from src.retriever import create_chunks
 from src.wiki_loader import load_wiki_page
-
+from src.wiki_index import get_source_pages, update_index, update_log
 
 PDF_PATH = "raw/pakistan_federal_budget_2026_27.pdf"
 MARKDOWN_PATH = "raw/pakistan_federal_budget_2026_27.md"
@@ -59,6 +59,9 @@ def ingest_source():
     print(f"Chunk data saved: {output}")
     print("Ingestion completed successfully.")
 
+    pages = get_source_pages()
+    update_index(pages)
+    update_log(pages)
 
 if __name__ == "__main__":
     ingest_source()

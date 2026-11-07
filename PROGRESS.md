@@ -14,7 +14,7 @@
 
 ## Phase D: Wiki
 - [x] 7. Ingest script
-- [ ] 8. Index + log
+- [x] 8. Index + log
 - [ ] 9. All sources ingested
 
 ## Phase E: Query + Lint
