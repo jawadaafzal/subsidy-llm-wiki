@@ -8,33 +8,39 @@ def tokenize(text: str) -> list[str]:
     return re.findall(r"\b[a-z0-9]+\b", text.lower())
 
 
-def create_chunks(text: str, max_chars: int = 2500) -> list[dict]:
+
+def create_chunks(
+    text: str,
+    max_chars: int = 2500,
+    overlap_lines: int = 10,
+) -> list[dict]:
     lines = text.splitlines()
     chunks = []
-    current_lines = []
-    start_line = 1
-    current_size = 0
+    start = 0
 
-    for line_number, line in enumerate(lines, start=1):
-        if current_size + len(line) > max_chars and current_lines:
-            chunks.append({
-                "text": "\n".join(current_lines),
-                "start_line": start_line,
-                "end_line": line_number - 1,
-            })
-            current_lines = []
-            current_size = 0
-            start_line = line_number
+    while start < len(lines):
+        end = start
+        current_size = 0
 
-        current_lines.append(line)
-        current_size += len(line) + 1
+        while end < len(lines):
+            line_size = len(lines[end]) + 1
 
-    if current_lines:
+            if current_size + line_size > max_chars and end > start:
+                break
+
+            current_size += line_size
+            end += 1
+
         chunks.append({
-            "text": "\n".join(current_lines),
-            "start_line": start_line,
-            "end_line": len(lines),
+            "text": "\n".join(lines[start:end]),
+            "start_line": start + 1,
+            "end_line": end,
         })
+
+        if end >= len(lines):
+            break
+
+        start = max(start + 1, end - overlap_lines)
 
     return chunks
 
