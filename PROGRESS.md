@@ -15,10 +15,10 @@
 ## Phase D: Wiki
 - [x] 7. Ingest script
 - [x] 8. Index + log
-- [ ] 9. All sources ingested
+- [x] 9. All sources ingested
 
 ## Phase E: Query + Lint
-- [ ] 10. Query
+- [x] 10. Query
 - [ ] 11. Query -> draft
 - [ ] 12. Lint agent
 

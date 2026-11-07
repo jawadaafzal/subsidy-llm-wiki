@@ -4,8 +4,14 @@ Last updated: 2026-11-07
 
 ## Source Pages
 
+### National Electricity Plan 2023-27
+- Type: source
+- Status: draft
+- Path: `wiki/sources/national_electricity_plan_2023_27.md`
+- Source IDs: national_electricity_plan_2023_27
+
 ### Pakistan Federal Budget 2026-27
 - Type: source
 - Status: draft
 - Path: `wiki/sources/pakistan_federal_budget_2026_27.md`
-- Source IDs: Not assigned
+- Source IDs: pakistan_federal_budget_2026_27

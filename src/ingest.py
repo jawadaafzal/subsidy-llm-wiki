@@ -1,4 +1,3 @@
-
 import json
 from pathlib import Path
 
@@ -7,61 +6,77 @@ from src.retriever import create_chunks
 from src.wiki_loader import load_wiki_page
 from src.wiki_index import get_source_pages, update_index, update_log
 
-PDF_PATH = "raw/pakistan_federal_budget_2026_27.pdf"
-MARKDOWN_PATH = "raw/pakistan_federal_budget_2026_27.md"
-WIKI_PATH = "wiki/sources/pakistan_federal_budget_2026_27.md"
-OUTPUT_PATH = "raw/processed/pakistan_federal_budget_2026_27.chunks.json"
+
+RAW_DIR = Path("raw")
+WIKI_SOURCES_DIR = Path("wiki/sources")
+PROCESSED_DIR = RAW_DIR / "processed"
 
 
-def ingest_source():
-    # 1. Check source PDF
-    if not Path(PDF_PATH).exists():
-        raise FileNotFoundError(f"PDF not found: {PDF_PATH}")
+def ingest_all_sources():
+    PROCESSED_DIR.mkdir(parents=True, exist_ok=True)
+    all_records = []
 
-    # 2. Extract PDF into Markdown
-    extract_pdf(PDF_PATH, MARKDOWN_PATH)
+    wiki_files = sorted(WIKI_SOURCES_DIR.glob("*.md"))
 
-    # 3. Validate existing Wiki page
-    if not Path(WIKI_PATH).exists():
-        raise FileNotFoundError(f"Wiki page not found: {WIKI_PATH}")
+    for wiki_file in wiki_files:
+        source_id = wiki_file.stem
+        pdf_path = RAW_DIR / f"{source_id}.pdf"
+        markdown_path = RAW_DIR / f"{source_id}.md"
 
-    page = load_wiki_page(WIKI_PATH)
-    print(f"Wiki page validated: {page.title}")
+        print(f"\nProcessing: {source_id}")
 
-    # 4. Read extracted Markdown
-    markdown = Path(MARKDOWN_PATH).read_text(encoding="utf-8")
+        if not pdf_path.exists():
+            print(f"PDF not found, skipping: {pdf_path}")
+            continue
 
-    # 5. Create overlapping chunks
-    chunks = create_chunks(markdown)
+        page = load_wiki_page(str(wiki_file))
+        print(f"Wiki page validated: {page.title}")
 
-    # 6. Save chunks with source references
-    output = Path(OUTPUT_PATH)
-    output.parent.mkdir(parents=True, exist_ok=True)
+        extract_pdf(str(pdf_path), str(markdown_path))
 
-    records = []
+        markdown = markdown_path.read_text(encoding="utf-8")
+        chunks = create_chunks(markdown)
 
-    for number, chunk in enumerate(chunks, start=1):
-        records.append({
-            "chunk_id": number,
-            "source_id": "pakistan_federal_budget_2026_27",
-            "source_file": MARKDOWN_PATH,
-            "start_line": chunk["start_line"],
-            "end_line": chunk["end_line"],
-            "text": chunk["text"],
-        })
+        records = []
 
-    output.write_text(
-        json.dumps(records, indent=2, ensure_ascii=False),
+        for number, chunk in enumerate(chunks, start=1):
+            record = {
+                "chunk_id": f"{source_id}_{number}",
+                "source_id": source_id,
+                "source_file": str(markdown_path),
+                "start_line": chunk["start_line"],
+                "end_line": chunk["end_line"],
+                "text": chunk["text"],
+            }
+
+            records.append(record)
+
+        output_path = PROCESSED_DIR / f"{source_id}.chunks.json"
+        output_path.write_text(
+            json.dumps(records, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+
+        all_records.extend(records)
+
+        print(f"Chunks created: {len(records)}")
+        print(f"Saved: {output_path}")
+
+    master_path = PROCESSED_DIR / "all_sources.chunks.json"
+    master_path.write_text(
+        json.dumps(all_records, indent=2, ensure_ascii=False),
         encoding="utf-8",
     )
-
-    print(f"Chunks created: {len(records)}")
-    print(f"Chunk data saved: {output}")
-    print("Ingestion completed successfully.")
 
     pages = get_source_pages()
     update_index(pages)
     update_log(pages)
 
+    print("\nIngestion completed.")
+    print(f"Total source pages: {len(pages)}")
+    print(f"Total chunks: {len(all_records)}")
+    print(f"Master file: {master_path}")
+
+
 if __name__ == "__main__":
-    ingest_source()
+    ingest_all_sources()
