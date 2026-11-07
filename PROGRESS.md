@@ -13,7 +13,7 @@
 - [x] 6. Planted problems
 
 ## Phase D: Wiki
-- [ ] 7. Ingest script
+- [x] 7. Ingest script
 - [ ] 8. Index + log
 - [ ] 9. All sources ingested
 
