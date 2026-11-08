@@ -25,6 +25,8 @@ page_type: entity
 related:
 - concepts/green_component_in_subsidies
 - concepts/other_subsidies
+- entities/food_subsidy_passco
+- entities/power_sector_subsidies
 sources:
 - pakistan_federal_budget_2026_27
 status: draft
@@ -58,3 +60,5 @@ Subsidies to industries and production cover urea fertilizer production and supp
 
 - [[concepts/green_component_in_subsidies]]
 - [[concepts/other_subsidies]]
+- [[entities/food_subsidy_passco]]
+- [[entities/power_sector_subsidies]]

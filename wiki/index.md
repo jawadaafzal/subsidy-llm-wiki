@@ -1,6 +1,6 @@
 # Wiki Index
 
-Auto-generated. Last rebuilt: 2026-11-08 10:24 UTC
+Auto-generated. Last rebuilt: 2026-11-08 10:41 UTC
 
 Page IDs are used as citations, for example [[concepts/power_subsidy]].
 
@@ -19,7 +19,7 @@ Page IDs are used as citations, for example [[concepts/power_subsidy]].
 
 - [[entities/food_subsidy_passco]] | Food Subsidy PASSCO | status: draft | facts: 3 | Budgetary allocations for PASSCO wheat reserves and cost differential sales for fiscal years 2025-26 and 2026-27.
 - [[entities/industries_and_production_subsidies]] | Industries and Production Subsidies | status: draft | facts: 4 | Allocations for fertilizer production, electric vehicle incentive schemes, and utility stores corporation (USC) arrears for fiscal years 2025-26 and 2
-- [[entities/power_sector_subsidies]] | Power Sector Subsidies | status: draft | facts: 10 | Overview of budgetary allocations for power sector subsidies, tariff differentials, and related energy funds for fiscal years 2025-26 and 2026-27.
+- [[entities/power_sector_subsidies]] | Power Sector Subsidies | status: draft | facts: 24 | Overview of budgetary allocations for power sector subsidies, tariff differentials, cross-subsidies, and related energy funds for fiscal years 2025-26
 
 ## Drafts
 

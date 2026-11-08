@@ -26,7 +26,8 @@ RULES
 8. Skip table of contents, boilerplate and anything unrelated to subsidies, their financing or policy. If nothing is relevant return {"pages": [], "conflicts": []}.
 9. main_content: a short overview written ONLY from the page's facts. Plain paragraphs or bullet lists only. No headings (no # characters). No new numbers.
 10. Be thorough. Go through the window row by row. Every table row that gives an amount for a subsidy, grant, scheme or programme must become a fact unless the wiki already has it. Repeating a fact that is already in the wiki is harmless: duplicates are removed automatically. Never return an empty result while the window still contains table rows with amounts.
-11. Return JSON only."""
+11. POLICY TEXT: Policy directives, objectives, rules and timelines about subsidies are knowledge too, even without any figure. For each such statement create one fact: one sentence starting with "The plan states that..." or "The plan directs that...", plus an exact contiguous quote. Never say a policy was implemented or paid; only say what the document states or plans. Group directives about one topic (for example electricity subsidy policy) on one concept page.
+12. Return JSON only."""
 
 
 SCHEMA_HINT = """{
@@ -242,7 +243,7 @@ def apply_data(data, source_id, nlines):
     return stats
 
 
-def ingest(source_id, max_windows=None, first_window=1, debug=False):
+def ingest(source_id, max_windows=None, first_window=1, debug=False, keyword=None):
     lines = W.load_source_lines(source_id)
     if lines is None:
         raise SystemExit(f"Not found: raw/{source_id}.md")
@@ -252,6 +253,7 @@ def ingest(source_id, max_windows=None, first_window=1, debug=False):
     windows = windows[first_window - 1:]
     if max_windows:
         windows = windows[:max_windows]
+        
 
     total = {"created": 0, "updated": 0, "facts": 0, "conflicts": 0, "rejected": 0}
     touched = []
@@ -260,6 +262,8 @@ def ingest(source_id, max_windows=None, first_window=1, debug=False):
     for number, (a, b) in enumerate(windows, start=first_window):
         window_lines = lines[a:b]
         if sum(len(x.strip()) for x in window_lines) < 200:
+            continue
+        if keyword and keyword.lower() not in " ".join(window_lines).lower():
             continue
         window_text = "\n".join(f"L{a + i + 1}: {line}" for i, line in enumerate(window_lines))
         prompt = (
@@ -303,5 +307,7 @@ if __name__ == "__main__":
     parser.add_argument("--max-windows", type=int, default=None)
     parser.add_argument("--first-window", type=int, default=1)
     parser.add_argument("--debug", action="store_true")
+    parser.add_argument("--keyword", default=None)
     args = parser.parse_args()
-    ingest(args.source_id, args.max_windows, args.first_window, args.debug)
+    ingest(args.source_id, args.max_windows, args.first_window,
+           args.debug, args.keyword)

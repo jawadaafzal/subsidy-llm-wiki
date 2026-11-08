@@ -21,6 +21,7 @@ page_type: entity
 related:
 - concepts/other_subsidies
 - concepts/current_expenditures_subsidies_overview
+- entities/industries_and_production_subsidies
 sources:
 - pakistan_federal_budget_2026_27
 status: draft
@@ -52,3 +53,4 @@ PASSCO receives food subsidies for maintaining wheat reserve stocks and covering
 
 - [[concepts/other_subsidies]]
 - [[concepts/current_expenditures_subsidies_overview]]
+- [[entities/industries_and_production_subsidies]]

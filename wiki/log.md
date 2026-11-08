@@ -142,3 +142,28 @@ pages with new links: 3
 
 ## [2026-11-08 10:24 UTC] lint | wiki
 issues: {'INFO': 6}
+
+## [2026-11-08 10:30 UTC] ingest | national_electricity_plan_2023_27
+pages created: 0, updated: 4, facts added: 5, conflicts: 0, facts rejected by verifier: 2
+- entities/power_sector_subsidies (+2 facts)
+- entities/power_sector_subsidies (+1 facts)
+
+## [2026-11-08 10:32 UTC] lint | wiki
+issues: {'INFO': 6}
+
+## [2026-11-08 10:38 UTC] link | wiki
+pages with new links: 3
+
+## [2026-11-08 10:38 UTC] lint | wiki
+issues: {'INFO': 6}
+
+## [2026-11-08 10:41 UTC] ingest | national_electricity_plan_2023_27
+pages created: 0, updated: 7, facts added: 9, conflicts: 0, facts rejected by verifier: 2
+- entities/power_sector_subsidies (+1 facts)
+- entities/power_sector_subsidies (+3 facts)
+
+## [2026-11-08 10:41 UTC] link | wiki
+pages with new links: 0
+
+## [2026-11-08 10:41 UTC] lint | wiki
+issues: {'INFO': 6}
