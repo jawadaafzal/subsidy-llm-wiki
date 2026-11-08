@@ -170,3 +170,105 @@ issues: {'INFO': 6}
 
 ## [2026-11-08 10:58 UTC] cleanup | planted + review test
 synthetic facts removed; evidence in docs/lint_report_planted.md and docs/log_planted_test.md
+
+## [2026-11-08 11:02 UTC] query | What is the total budgeted subsidy for FY 2026-27?
+pages: concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget
+
+## [2026-11-08 11:02 UTC] query | How much is budgeted for the Subsidy to Power Sector (WAPDA/PEPCO/KESC) in FY 2026-27?
+pages: entities/power_sector_subsidies, sources/pakistan_federal_budget_2026_27, concepts/current_expenditures_subsidies_overview; cited: entities/power_sector_subsidies
+
+## [2026-11-08 11:02 UTC] query | How much is budgeted for the Subsidy to Food (PASSCO) in FY 2026-27?
+pages: entities/food_subsidy_passco, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: entities/food_subsidy_passco
+
+## [2026-11-08 11:03 UTC] query | How much is budgeted for the Subsidy to Industries and Production in FY 2026-27?
+pages: entities/industries_and_production_subsidies, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: entities/industries_and_production_subsidies
+
+## [2026-11-08 11:03 UTC] query | What is the total of Others Subsidies budgeted for FY 2026-27?
+pages: concepts/other_subsidies, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: concepts/other_subsidies
+
+## [2026-11-08 11:03 UTC] query | What is the green component in subsidies for FY 2026-27?
+pages: concepts/green_component_in_subsidies, published/pakistani_government_subsidies_in_the_fy2026_27_budget, concepts/current_expenditures_subsidies_overview; cited: concepts/green_component_in_subsidies, published/pakistani_government_subsidies_in_the_fy2026_27_budget
+
+## [2026-11-08 11:03 UTC] query | How much is allocated to the PM Apna Ghar Program in FY 2026-27?
+pages: concepts/other_subsidies, published/pakistani_government_subsidies_in_the_fy2026_27_budget, sources/pakistan_federal_budget_2026_27; cited: concepts/other_subsidies
+
+## [2026-11-08 11:04 UTC] query | How much is allocated to the Mera Pakistan Mera Ghar scheme in FY 2026-27?
+pages: concepts/other_subsidies, sources/pakistan_federal_budget_2026_27, published/pakistani_government_subsidies_in_the_fy2026_27_budget, concepts/current_expenditures_subsidies_overview; cited: concepts/other_subsidies
+
+## [2026-11-08 11:04 UTC] query | How much is budgeted for the Metro Bus Subsidy in FY 2026-27?
+pages: concepts/other_subsidies, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: concepts/other_subsidies
+
+## [2026-11-08 11:04 UTC] query | How much is budgeted for the markup subsidy to support phasing out of SBP refinancing facilities and Export Re-finance Schemes in FY 2026-27?
+pages: concepts/other_subsidies, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: concepts/other_subsidies, published/pakistani_government_subsidies_in_the_fy2026_27_budget
+
+## [2026-11-08 11:04 UTC] query | What does the National Electricity Plan say about reappropriation of subsidies between the Power Division and the Petroleum Division?
+pages: sources/national_electricity_plan_2023_27, entities/power_sector_subsidies; cited: sources/national_electricity_plan_2023_27, entities/power_sector_subsidies
+
+## [2026-11-08 11:04 UTC] query | How does the National Electricity Plan say subsidies for protected residential consumers should be disbursed?
+pages: sources/national_electricity_plan_2023_27, entities/power_sector_subsidies; cited: sources/national_electricity_plan_2023_27, entities/power_sector_subsidies
+
+## [2026-11-08 11:05 UTC] query | Has the government already paid Rs 1,091,000 million to subsidy beneficiaries in FY 2026-27?
+pages: concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget, sources/pakistan_federal_budget_2026_27; cited: concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget, sources/pakistan_federal_budget_2026_27
+
+## [2026-11-08 11:05 UTC] query | What is the population of Pakistan?
+pages: published/pakistani_government_subsidies_in_the_fy2026_27_budget, entities/power_sector_subsidies, concepts/green_component_in_subsidies, concepts/current_expenditures_subsidies_overview, sources/pakistan_federal_budget_2026_27; cited: 
+
+## [2026-11-08 11:05 UTC] query | Who is the Finance Minister of Pakistan?
+pages: published/pakistani_government_subsidies_in_the_fy2026_27_budget, entities/power_sector_subsidies, concepts/green_component_in_subsidies, concepts/current_expenditures_subsidies_overview, sources/pakistan_federal_budget_2026_27; cited: 
+
+## [2026-11-08 11:10 UTC] query | What is the total budgeted subsidy for FY 2026-27?
+pages: concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget
+
+## [2026-11-08 11:10 UTC] query | How much is budgeted for the Subsidy to Power Sector (WAPDA/PEPCO/KESC) in FY 2026-27?
+pages: entities/power_sector_subsidies, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: entities/power_sector_subsidies
+
+## [2026-11-08 11:10 UTC] query | How much is budgeted for the Subsidy to Food (PASSCO) in FY 2026-27?
+pages: entities/food_subsidy_passco, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: entities/food_subsidy_passco
+
+## [2026-11-08 11:10 UTC] query | How much is budgeted for the Subsidy to Industries and Production in FY 2026-27?
+pages: entities/industries_and_production_subsidies, published/pakistani_government_subsidies_in_the_fy2026_27_budget, concepts/current_expenditures_subsidies_overview, concepts/green_component_in_subsidies; cited: entities/industries_and_production_subsidies
+
+## [2026-11-08 11:19 UTC] query | What is the total budgeted subsidy for FY 2026-27?
+pages: concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget
+
+## [2026-11-08 11:19 UTC] query | How much is budgeted for the Subsidy to Power Sector (WAPDA/PEPCO/KESC) in FY 2026-27?
+pages: entities/power_sector_subsidies, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: entities/power_sector_subsidies
+
+## [2026-11-08 11:20 UTC] query | How much is budgeted for the Subsidy to Food (PASSCO) in FY 2026-27?
+pages: entities/food_subsidy_passco, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: entities/food_subsidy_passco
+
+## [2026-11-08 11:20 UTC] query | How much is budgeted for the Subsidy to Industries and Production in FY 2026-27?
+pages: entities/industries_and_production_subsidies, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: entities/industries_and_production_subsidies, published/pakistani_government_subsidies_in_the_fy2026_27_budget
+
+## [2026-11-08 11:20 UTC] query | What is the total of Others Subsidies budgeted for FY 2026-27?
+pages: concepts/other_subsidies, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: concepts/other_subsidies
+
+## [2026-11-08 11:20 UTC] query | What is the green component in subsidies for FY 2026-27?
+pages: concepts/green_component_in_subsidies, published/pakistani_government_subsidies_in_the_fy2026_27_budget, concepts/current_expenditures_subsidies_overview; cited: concepts/green_component_in_subsidies
+
+## [2026-11-08 11:20 UTC] query | How much is allocated to the PM Apna Ghar Program in FY 2026-27?
+pages: concepts/other_subsidies, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: concepts/other_subsidies
+
+## [2026-11-08 11:20 UTC] query | How much is allocated to the Mera Pakistan Mera Ghar scheme in FY 2026-27?
+pages: concepts/other_subsidies, sources/pakistan_federal_budget_2026_27, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: concepts/other_subsidies
+
+## [2026-11-08 11:21 UTC] query | How much is budgeted for the Metro Bus Subsidy in FY 2026-27?
+pages: concepts/other_subsidies, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: concepts/other_subsidies
+
+## [2026-11-08 11:21 UTC] query | How much is budgeted for the markup subsidy to support phasing out of SBP refinancing facilities and Export Re-finance Schemes in FY 2026-27?
+pages: concepts/other_subsidies, concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget; cited: concepts/other_subsidies
+
+## [2026-11-08 11:21 UTC] query | What does the National Electricity Plan say about reappropriation of subsidies between the Power Division and the Petroleum Division?
+pages: sources/national_electricity_plan_2023_27, sources/pakistan_federal_budget_2026_27, entities/power_sector_subsidies; cited: sources/national_electricity_plan_2023_27, entities/power_sector_subsidies
+
+## [2026-11-08 11:21 UTC] query | How does the National Electricity Plan say subsidies for protected residential consumers should be disbursed?
+pages: sources/national_electricity_plan_2023_27, entities/power_sector_subsidies; cited: sources/national_electricity_plan_2023_27, entities/power_sector_subsidies
+
+## [2026-11-08 11:22 UTC] query | Has the government already paid Rs 1,091,000 million to subsidy beneficiaries in FY 2026-27?
+pages: concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget, sources/pakistan_federal_budget_2026_27; cited: concepts/current_expenditures_subsidies_overview, published/pakistani_government_subsidies_in_the_fy2026_27_budget, sources/pakistan_federal_budget_2026_27
+
+## [2026-11-08 11:22 UTC] query | What is the population of Pakistan?
+pages: published/pakistani_government_subsidies_in_the_fy2026_27_budget, entities/power_sector_subsidies, concepts/green_component_in_subsidies, concepts/current_expenditures_subsidies_overview, sources/pakistan_federal_budget_2026_27; cited: 
+
+## [2026-11-08 11:22 UTC] query | Who is the Finance Minister of Pakistan?
+pages: published/pakistani_government_subsidies_in_the_fy2026_27_budget, entities/power_sector_subsidies, concepts/green_component_in_subsidies, concepts/current_expenditures_subsidies_overview, sources/pakistan_federal_budget_2026_27; cited: 

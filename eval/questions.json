@@ -1,0 +1,17 @@
+[
+  {"id": "Q01", "type": "figure", "q": "What is the total budgeted subsidy for FY 2026-27?", "must_contain_any": ["1,091,000"]},
+  {"id": "Q02", "type": "figure", "q": "How much is budgeted for the Subsidy to Power Sector (WAPDA/PEPCO/KESC) in FY 2026-27?", "must_contain_any": ["830,000"]},
+  {"id": "Q03", "type": "figure", "q": "How much is budgeted for the Subsidy to Food (PASSCO) in FY 2026-27?", "must_contain_any": ["19,000"]},
+  {"id": "Q04", "type": "figure", "q": "How much is budgeted for the Subsidy to Industries and Production in FY 2026-27?", "must_contain_any": ["37,000"]},
+  {"id": "Q05", "type": "figure", "q": "What is the total of Others Subsidies budgeted for FY 2026-27?", "must_contain_any": ["205,000"]},
+  {"id": "Q06", "type": "figure", "q": "What is the green component in subsidies for FY 2026-27?", "must_contain_any": ["476,000"]},
+  {"id": "Q07", "type": "figure", "q": "How much is allocated to the PM Apna Ghar Program in FY 2026-27?", "must_contain_any": ["71,000"]},
+  {"id": "Q08", "type": "figure", "q": "How much is allocated to the Mera Pakistan Mera Ghar scheme in FY 2026-27?", "must_contain_any": ["5,000"]},
+  {"id": "Q09", "type": "figure", "q": "How much is budgeted for the Metro Bus Subsidy in FY 2026-27?", "must_contain_any": ["5,000"]},
+  {"id": "Q10", "type": "figure", "q": "How much is budgeted for the markup subsidy to support phasing out of SBP refinancing facilities and Export Re-finance Schemes in FY 2026-27?", "must_contain_any": ["88,000"]},
+  {"id": "Q11", "type": "policy", "q": "What does the National Electricity Plan say about reappropriation of subsidies between the Power Division and the Petroleum Division?", "must_contain_any": ["reappropriat"]},
+  {"id": "Q12", "type": "policy", "q": "How does the National Electricity Plan say subsidies for protected residential consumers should be disbursed?", "must_contain_any": ["direct"]},
+  {"id": "Q13", "type": "premise", "q": "Has the government already paid Rs 1,091,000 million to subsidy beneficiaries in FY 2026-27?", "must_contain_any": ["allocat", "budget"], "must_not_contain": ["has paid", "was paid", "have been paid"]},
+  {"id": "Q14", "type": "out_of_scope", "q": "What is the population of Pakistan?"},
+  {"id": "Q15", "type": "out_of_scope", "q": "Who is the Finance Minister of Pakistan?"}
+]
