@@ -167,3 +167,6 @@ pages with new links: 0
 
 ## [2026-11-08 10:41 UTC] lint | wiki
 issues: {'INFO': 6}
+
+## [2026-11-08 10:58 UTC] cleanup | planted + review test
+synthetic facts removed; evidence in docs/lint_report_planted.md and docs/log_planted_test.md

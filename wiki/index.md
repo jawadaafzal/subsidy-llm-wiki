@@ -1,6 +1,6 @@
 # Wiki Index
 
-Auto-generated. Last rebuilt: 2026-11-08 10:41 UTC
+Auto-generated. Last rebuilt: 2026-11-08 10:58 UTC
 
 Page IDs are used as citations, for example [[concepts/power_subsidy]].
 
