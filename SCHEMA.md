@@ -30,3 +30,22 @@ Each page must contain:
 - Clearly identify uncertain information.
 - Keep content in Markdown format.
 - Draft pages must be reviewed before publishing.
+
+
+## Schema v2: LLM-maintained pages
+
+Pages in `wiki/concepts/` and `wiki/entities/` are written by the LLM during ingest.
+
+Extra frontmatter fields:
+- `facts`: list of `{fact, source_id, lines, quote}`. This is the machine-readable knowledge. The body is rendered from it.
+- `related`: list of page ids.
+- `conflicts`: contradictions detected during ingest.
+- `valid_until`: optional expiry date (YYYY-MM-DD).
+
+Rules enforced by code (not by the LLM):
+- A fact is saved only if its `quote` is found in `raw/<source_id>.md`.
+- Figures in a fact must appear in its quote. The LLM may not calculate numbers.
+- Line numbers are found by Python, not by the LLM.
+- Existing facts are never deleted by an update.
+- Any LLM change resets `status` to `draft`. Only a human review makes it `reviewed`.
+- `raw/` is immutable. Page ids look like `concepts/power_subsidy` and are used for citations.

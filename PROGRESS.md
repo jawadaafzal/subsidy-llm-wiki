@@ -19,14 +19,14 @@
 
 ## Phase E: Query + Lint
 - [x] 10. Query
-- [ ] 11. Query -> draft
-- [ ] 12. Lint agent
+- [x] 11. Query -> draft
+- [x] 12. Lint agent
 
 ## Phase F: Governance
-- [ ] 13. Review workflow
+- [x] 13. Review workflow
 
 ## Phase G: UI + Evaluation
-- [ ] 14. Streamlit UI
+- [x] 14. Streamlit UI
 - [ ] 15. Eval set
 - [ ] 16. Eval run
 - [ ] 17. Wiki vs RAG

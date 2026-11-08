@@ -11,8 +11,8 @@ def tokenize(text: str) -> list[str]:
 
 def create_chunks(
     text: str,
-    max_chars: int = 10000,
-    overlap_lines: int = 20,
+    max_chars: int = 4000,
+    overlap_lines: int = 10,
 ) -> list[dict]:
     lines = text.splitlines()
     chunks = []

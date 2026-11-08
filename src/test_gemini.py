@@ -2,7 +2,7 @@ print("Test started", flush=True)
 
 from google import genai
 from google.genai import types
-from config import GEMINI_API_KEY, MODEL_MAIN
+from src.config import GEMINI_API_KEY, MODEL_MAIN
 
 client = genai.Client(
     api_key=GEMINI_API_KEY,

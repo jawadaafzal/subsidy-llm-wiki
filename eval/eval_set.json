@@ -1,0 +1,42 @@
+[
+  {
+    "question": "What is the total amount allocated to subsidies in Pakistan's FY2026-27 budget?",
+    "expected_answer": "Rs 1,091,000 million.",
+    "source": "pakistan_federal_budget_2026_27"
+  },
+  {
+    "question": "How much is allocated to power subsidies in FY2026-27?",
+    "expected_answer": "Rs 830,000 million.",
+    "source": "pakistan_federal_budget_2026_27"
+  },
+  {
+    "question": "How much is allocated to food subsidies for PASSCO?",
+    "expected_answer": "Rs 19,000 million.",
+    "source": "pakistan_federal_budget_2026_27"
+  },
+  {
+    "question": "How much is allocated to the green component in subsidies?",
+    "expected_answer": "Rs 476,000 million.",
+    "source": "pakistan_federal_budget_2026_27"
+  },
+  {
+    "question": "Does the budget allocation prove that the government has paid the full amount to beneficiaries?",
+    "expected_answer": "No. A budget allocation is not proof of actual payments.",
+    "source": "pakistan_federal_budget_2026_27"
+  },
+  {
+    "question": "What does National Electricity Plan Directive 82 address?",
+    "expected_answer": "Direct disbursement of subsidies to protected residential consumers.",
+    "source": "national_electricity_plan_2023_27"
+  },
+  {
+    "question": "What does National Electricity Plan Directive 83 address?",
+    "expected_answer": "Subsidies for agricultural consumers.",
+    "source": "national_electricity_plan_2023_27"
+  },
+  {
+    "question": "What is the exact year specified in Directive 84 for restricting cross-subsidies?",
+    "expected_answer": "The extracted source does not provide a complete year; it requires verification.",
+    "source": "national_electricity_plan_2023_27"
+  }
+]
